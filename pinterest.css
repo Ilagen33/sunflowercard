@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*   {
+
+    /*Reset Settings*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card   {
+/*CARD SIZE*/
+    height: 450px;
+    width: 300px;
+/*STYLE*/
+    background-image: url(https://i.pinimg.com/originals/e6/13/e7/e613e7e9b5b94e7a1f3b03823a9292a7.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 45px;
+    border: 3px solid white;
+    box-shadow: 17px 20px 20px 4px #71a2a8;
+/*POSITION SETTINGS*/
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, 15%);
+    overflow:hidden;
+}
+
+.save   {
+    /*POSITION SETTINGS*/
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    /*BUTTON SIZE*/
+    padding: 9px;
+    font-size: 15px;
+    border-radius: 25px;
+    /*STYLE*/
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: top 0.1s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: #d89677;
+}
+
+.name,
+.load,
+.menu   {
+     /*POSIZION SETTINGS*/
+     position:absolute;
+     bottom: -40px;
+     padding:10px;
+     margin: 0 10px;
+     /*STYLE*/
+     color: #d89677;
+     border-radius: 25px;
+     opacity: 0.6;
+     cursor: pointer;
+     background-color: white;
+     /*TRANSITION*/
+    transition: 0.1s ease-in-out;
+}
+
+.name   {
+    left:5px;
+}
+.load   {
+    right: 45px;
+}
+.menu   {
+    right: 5px;
+}
+
+/*ANIMATIONS*/
+.card:hover .save   {
+    /*Put down- Save Button*/
+    top:20px;
+    
+}
+
+.name:hover,
+.load:hover,
+.menu:hover    {
+
+    /*More Opacity*/
+    opacity:1;
+}
+
+.card:hover .name,
+.card:hover .load,
+.card:hover .menu {
+
+    /*Animation- put up bottom buttons*/
+    bottom:10px;
+}
